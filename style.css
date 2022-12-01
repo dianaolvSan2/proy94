@@ -1,3 +1,6 @@
+body{
+    text-align: center;
+}
 header{
     width:100%;
     height: 60px;
@@ -57,7 +60,7 @@ main{
 .section-input{
     background-color:black;
     color: white;
-    width:550px;
+    width:50%;
     border-radius: 50px;
 }
 
@@ -102,4 +105,22 @@ color: black;
     padding: 5px;
     border-radius:20px;
 
+}
+
+.input_div_room_page
+{
+	width: 80%;
+}
+
+#section_sala{
+    width: 100%;
+    height:250px;
+    text-align: center;
+    display: inline-block;
+}
+
+#section_sala label{
+    display: block;
+    font-size:15px;
+    font-weight: bold;
 }

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Hola_Chat</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 <body>
     <header>
@@ -18,26 +23,33 @@
     </header>
 
     <center>
-        <main class="">
+        <main class="container">
             <section class="section-logo">
                 <img id="logo"src="https://cdn-icons-png.flaticon.com/512/7595/7595867.png" alt="">               
                 <img src="https://img.icons8.com/ios-filled/50/null/chat--v1.png"/>
             </section>
             <br>
-            <section  id="output" class="section-input">
-               
-                <!-- <div id="output" style="text-align: left; margin-bottom: 70px;"> </div> -->
+            <h3 id="user_name" class=""></h3>
+            <section  id="section_sala" class="section-input">
+                <br>
+                <br>
+                <br>    
+                <label>Añadir sala:</label>
+                <br><br>
+                  <input type="text" id="room_name" class="form-control" placeholder="#Nombre de la sala">
+                    <br><br>
+                    <button onclick="addRoom()">Enviar</button>
+   
 
             </section>
                 <br>
-                <section class="input_div_message_page">
-                    <label>Send:</label>
-                    <input type="text" id="msg" class="form-control" placeholder="Message">
-                    
-                    <button onclick="send()" class="btn btn-success ">Enviar</button>
-                </section>
+            <section>
+                <div id="output" style="text-align: left;margin-bottom: 70px;"> </div>
+
+            </section>
         </main>
     
     </center>
+    <script src="chat.js"></script>
 </body>
 </html>
